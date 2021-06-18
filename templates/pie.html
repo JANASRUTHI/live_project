@@ -1,0 +1,90 @@
+<html lang="en">
+<head>
+  <title>GRAPH</title>
+<!-- Styles -->
+<style>
+  #chartdiv {
+    width: 100%;
+    height: 500px;
+  }
+ 
+  body{
+    background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  }
+  </style>
+  
+  <!-- Resources -->
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  
+  <!-- Chart code -->
+  <script>
+  am4core.ready(function() {
+  
+  // Themes begin
+  am4core.useTheme(am4themes_animated);
+  // Themes end
+  
+  // Create chart instance
+  var chart = am4core.create("chartdiv", am4charts.PieChart);
+  
+  // Add data
+  chart.data = [ {
+    "state": "maharashtra",
+    "death": 94030
+  }, {
+    "state": "karnataka",
+    "death": 28298
+  }, {
+    "state": "kerala",
+    "death": 10456
+  }, {
+    "state": "tamilnadu",
+    "death": 23261
+  }, {
+    "state": "uttarpradesh",
+    "death": 20208
+  }, {
+    "state": "andhrapradesh",
+    "death": 10738
+  }, {
+    "state": "delhi",
+    "death":24073
+  },{
+    "state":"westbengal",
+    "death":15268
+  },{
+    "state":"chhattisgarh",
+    "death":12979
+  },{
+    "state":"rajasthan",
+    "death": 8751
+  }
+  ];
+  
+  // Add and configure Series
+  var pieSeries = chart.series.push(new am4charts.PieSeries());
+  pieSeries.dataFields.value = "death";
+  pieSeries.dataFields.category = "state";
+  pieSeries.slices.template.stroke = am4core.color("#fff");
+  pieSeries.slices.template.strokeWidth = 2;
+  pieSeries.slices.template.strokeOpacity = 1;
+  
+  // This creates initial animation
+  pieSeries.hiddenState.properties.opacity = 1;
+  pieSeries.hiddenState.properties.endAngle = -90;
+  pieSeries.hiddenState.properties.startAngle = -90;
+  
+  }); // end am4core.ready()
+  </script>
+  
+  <!-- HTML -->
+  <div id="chartdiv"></div>
+
+
+</head>
+<body>
+  <h>COVID 19 DEATHCASE</h>
+</body>
+</html>

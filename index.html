@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+<title>My website</title>
+<head>
+	<meta charset="UTF-8">
+	<meta name = "viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="static/images/o.png">
+	<link rel="stylesheet" href="https://www.w3schools.co/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="static/css/styles1.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+  <div class="topnav">
+    <img src="static/images/o.png" width="50" height="40" alt=""&ensp><h style= "color: whitesmoke;">My Website</h>
+	  <a href="#">Home</a>
+	  <a href="templates/dashboard.html">Dashboard</a>
+	  <a href="templates/news.html">News</a>
+	  <a href="templates/contact.html">Contact Us</a>
+	</div><br><br><br><br><br><br><br><br><br><br>
+	<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 4</div>
+      <img src="static/images/he4.jpg" style="width: 1332px;height: 400px;">
+      <div class="text">ALL ABOUT COVID SAFETY</div>
+    </div>
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 4</div>
+      <img src="static/images/he2.jpg" style="width:1332px;height: 400px;">
+      <div class="text">ALL ABOUT COVID SAFETY</div>
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 4</div>
+      <img src="static/images/he3.jpg" style="width: 1332px;height: 400px;">
+      <div class="text">ALL ABOUT COVID SAFETY</div>
+    </div>
+    <div class="mySlides fade">
+        <div class="numbertext">4 / 4</div>
+        <img src="static/images/he5.jpg" style="width: 1332px;height:400px">
+        <div class="text">ALL ABOUT COVID SAFETY</div>
+      </div>
+    
+    </div>
+    
+    <div style="text-align:center;">
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+      <span class="dot"></span> 
+    </div>
+	
+<br><br><br><br><br>
+<div class="loader">
+  <div class="nest5"></div>
+</div>
+<div class="row">
+  <a href="templates/healthcare.html">
+  <div class="column">
+    <div class="card">
+      <img src="static/images/healthcare.jpg" alt="healthcare" style="width:100%" >
+      <div class="container">
+        <h2>HEALTHCARE AND MEDICATION</h2>
+      </div>
+    </div>
+  </div></a>
+  <a href="templates/help.html">
+  <div class="column">
+    <div class="card">
+      <img src="static/images/healthcare.jpg" alt="help and support" style="width:100% " >
+      <div class="container">
+        <h2>HELP AND SUPPORT</h2>
+      </div>
+    </div>
+  </div></a>
+  <a href="templates/mental.html">
+  <div class="column">
+    <div class="card">
+      <img src="static/images/healthcare.jpg" alt="healthcare" style="width:100%" >
+      <div class="container">
+        <h2>MENTAL WELL-BEING</h2>
+      </div>
+    </div>
+  </div></a>
+  <a href="templates/awareness.html">
+  <div class="column">
+    <div class="card">
+      <img src="static/images/healthcare.jpg" alt="healthcare" style="width:100%" >
+      <div class="container">
+        <h2>AWARENESS, PREVENTION, REMEDIES</h2>
+      </div>
+    </div>
+  </div></a>
+</div><br><br><br><br><br><br><br><br><br>
+<div class="w3-container">
+  <h2>Our Vision</h2>
+  <p><i><b>The World is full of pandemic condition ,Each and every one of us should be aware of everything.</b></i></p>
+</div><br><br><br><br><br><br>
+<div class="w4-container">
+  <div class="video">
+    &emsp;&emsp;&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe  height="350" width="350"  src="https://www.youtube.com/embed/rAj38E7vrS8"></iframe>
+    &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<iframe  height="350" width="350"  src="https://www.youtube.com/embed/UcFDdfueQRg"></iframe>
+</div></div><br><br><br><br><br><br>
+<div class="quotation">
+  <p><span>“ </span><i>Once you replace negative thoughts with positive ones, you’ll start having positivity around Us!! –Willie Nelson</i><span>”</span></p>
+</div>
+
+<br><br><br><br><br><br><br>
+  <script>
+            setTimeout(function(){
+            $('.loader').fadeToggle();
+            }, 2000);
+  var slideIndex = 0;
+  showSlides();
+  
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    var dots = document.getElementsByClassName("dot");
+    for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}    
+    for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+    }
+    slides[slideIndex-1].style.display = "block";  
+    dots[slideIndex-1].className += " active";
+    setTimeout(showSlides, 5000); // Change image every 5 seconds
+  }
+  </script>
+<footer>
+  <h2 style="color:aqua;font-size: 15px;font-family: Georgia, 'Times New Roman', Times, serif;"><b>Our Goal is to Keep People Safe!!</b></h2>
+  <h2 style="color: azure;font-size: 15px;font-family: Georgia, 'Times New Roman', Times, serif;"><b>Terms of Use . Privacy Policy</b></h2>
+  <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 15px;"> Contact Us : My_website@gmail.com</a></p>
+      <p style="font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 15px;">Follow Us: <a href="https://www.facebook.com/"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+      <a href="https://www.instagram.com/?hl=en"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+      <a href="https://www.pinterest.com/"><i class="fa fa-pinterest-p" aria-hidden="true"></i></a>
+      <a href="https://twitter.com/?lang=en"><i class="fa fa-twitter" aria-hidden="true"></i></a></p>
+</footer>
+
+</body>
+</html>

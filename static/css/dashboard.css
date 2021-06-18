@@ -1,0 +1,72 @@
+#chartdiv {
+    width: 100%;
+    height: 500px;
+  }
+  body {
+    background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.container {
+  width: 700px;
+  padding: 15px 0 0 0;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+tr {
+  text-align:center;
+}
+
+tbody  {
+  background-color:black;
+}
+
+th {
+  font-size: 125%;
+  padding-bottom: 15px;
+  color:brown;
+}
+
+td {
+  color:cornsilk;
+  padding: 10px;
+}
+/* Style the top navigation bar */
+.topnav {
+overflow: hidden;
+background-color:black;
+font-size: 20px;
+padding: 12px;
+position: fixed; /* Set the navbar to fixed position */
+top: 0; /* Position the navbar at the top of the page */
+width: 100%; /* Full width */
+}
+/* Style the topnav links */
+.topnav a {
+float: right;
+display: block;
+color: #f2f2f2;
+text-align: center;
+padding: 14px 16px;
+text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+background-color: #ddd;
+color: black;
+}
+/* Placing of images */
+.column {
+float: left;
+width: 20%;
+margin-bottom: 16px;
+padding: 0 8px;
+font-size: 15px;
+}
+.nav-wrapper{
+  background-color:purple ;
+}

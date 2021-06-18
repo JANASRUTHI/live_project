@@ -1,0 +1,36 @@
+#chartdiv {
+    width: 100%;
+    height: 500px;
+  }
+  body {background-image: linear-gradient(to top, #df89b5 0%, #bfd9fe 100%);
+  box-sizing: border-box;
+  margin: 0;
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+}
+
+.container {
+  width: 700px;
+  padding: 15px 0 0 0;
+  text-align: center;
+  margin: 0 auto;
+
+}
+
+tr {
+  text-align:center;
+}
+
+tbody  {
+  background-color:black;
+}
+
+th {
+  font-size: 125%;
+  color: brown;
+  padding-bottom: 15px;
+}
+
+td {
+  padding: 10px;
+  color: cornsilk;
+}

@@ -1,0 +1,51 @@
+body {
+    background-image: linear-gradient(to left, rgb(221, 212, 212) 0%,papayawhip 100%);
+  }
+  /* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  font-size: 20px;
+  padding: 12px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+}
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+/* Placing of images */
+.column {
+  float: left;
+  width: 20%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  font-size: 15px;
+  }
+
+.w3-container{
+  background-image: linear-gradient(to left,rgb(241, 241, 134) 0%, #403269 100%);
+  text-align: center;
+  width: 50%;
+  height: 50%;
+  padding: 10px;
+  border:#ddd 2px solid;
+}
+
+  footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+}

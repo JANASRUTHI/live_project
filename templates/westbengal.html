@@ -1,0 +1,102 @@
+<html lang="en">
+<head>
+  <title>COVID19 Dashboard</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../static/css/west.css">
+  <link rel="icon" href="../static/images/o.png">
+  
+    
+  <!-- Resources -->
+  <script src="https://cdn.amcharts.com/lib/4/core.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/charts.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/material.js"></script>
+  <script src="https://cdn.amcharts.com/lib/4/themes/animated.js"></script>
+  
+<!-- Chart code -->
+<script>
+    am4core.ready(function() {
+    
+    // Themes begin
+    am4core.useTheme(am4themes_material);
+    am4core.useTheme(am4themes_animated);
+    // Themes end
+    
+    // Create chart instance
+    var chart = am4core.create("chartdiv", am4charts.XYChart);
+    
+    // Add data
+    chart.data = [{
+      "state": "death",
+      "death": 15268
+    },{
+        "state":"cases",
+        "death":1354956
+    },{
+        "state":"recovered",
+        "death":1237290
+    },{
+        "state":"active",
+        "death":102398
+    }
+    ];
+   
+    // Create axes
+    
+    var categoryAxis = chart.xAxes.push(new am4charts.CategoryAxis());
+    categoryAxis.dataFields.category = "state";
+    categoryAxis.renderer.grid.template.location = 0;
+    categoryAxis.renderer.minGridDistance = 30;
+    
+    categoryAxis.renderer.labels.template.adapter.add("dy", function(dy, target) {
+      if (target.dataItem && target.dataItem.index & 2 == 2) {
+        return dy + 25;
+      }
+      return dy;
+    });
+    
+    var valueAxis = chart.yAxes.push(new am4charts.ValueAxis());
+    
+    // Create series
+    var series = chart.series.push(new am4charts.ColumnSeries());
+    series.dataFields.valueY = "death";
+    series.dataFields.categoryX = "state";
+    series.name = "death";
+    series.columns.template.tooltipText = "{categoryX}: [bold]{valueY}[/]";
+    series.columns.template.fillOpacity = .8;
+    
+    var columnTemplate = series.columns.template;
+    columnTemplate.strokeWidth = 3;
+    columnTemplate.strokeOpacity = 1;
+    
+    }); // end am4core.ready()
+    </script>
+    <!-- HTML -->
+    <div id="chartdiv"></div>
+</head>
+<body >
+  <div class="container">
+    <h1>COVID19 Dashboard</h1>
+  <center><table>
+      <thead>
+        <tr>
+          <th>StateName</th> 
+          <th>Cases</th> 
+          <th>Active</th> 
+          <th>Recovered</th> 
+          <th>Deaths</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+            <td>westbengal</td>
+          <td>1354956</td>
+          <td>102398</td>
+          <td>1237290</td>
+          <td>15268</td>
+        </tr>
+      </tbody>
+    </var>
+    </table><center><br><br><br>
+  </div>
+</body>
+</html>

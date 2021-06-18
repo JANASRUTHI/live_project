@@ -1,0 +1,224 @@
+body{
+
+	background-image: linear-gradient(to right, #3525af, #9153c9);
+	
+}
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+/* Slideshow container */
+.slideshow-container {
+  max-width:10000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: whitesmoke;
+  font-size: 30px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: bold;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 5px;
+  width: 5px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color:black;
+  font-size: 20px;
+  padding: 12px;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 97%; /* Full width */
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: right;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Placing of images */
+.column {
+  float:left;
+  width: 20%;
+  margin-left: 40px;
+  margin-bottom: 16px;
+  padding: 0 8px;
+  font-size: 15px;
+  }
+  .nest5 {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 50px;
+    width: 50px;
+    margin: -25px 0 0 -25px;
+    border: 2px solid transparent;
+    border-top-color: #008744;
+    border-radius: 50%;
+    -webkit-animation: spin11 2s linear infinite;
+            animation: spin11 2s linear infinite;
+  }
+  
+.nest5:before {
+    content: "";
+    position: absolute;
+    top: 7px;
+    right: 7px;
+    bottom: 7px;
+    left: 7px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top-color: #d62d20;
+    -webkit-animation: spin11 3s linear infinite;
+            animation: spin11 3s linear infinite;
+}
+  
+.nest5:after {
+    content: "";
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    bottom: 15px;
+    left: 15px;
+    border: 2px solid transparent;
+    border-radius: 50%;
+    border-top-color: #ffa700;
+    -webkit-animation: spin11 1.5s linear infinite;
+            animation: spin11 1.5s linear infinite;
+}
+  
+  @-webkit-keyframes spin11 {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+    }
+}
+  @keyframes spin11 {
+    from {
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+    }
+    to {
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+      -webkit-transform: rotate(359deg);
+              transform: rotate(359deg);
+    }
+}
+
+  h2{
+    color: black;
+  }
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 15px;
+}
+.container {
+  height: 100px;
+  padding: 0 16px;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+.w3-container{
+  text-align:center ;
+  background-color: rgb(248, 177, 227);
+    font-family:cursive;
+    font-size: medium;
+    padding: 5rem 1rem;
+}
+.quotation  {
+  padding-right: 3rem;
+  padding-left: 7rem;
+  font-weight:bold;
+  font-size: 1.5rem;
+  font-family: 'Bad Script';
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #000000;
+  color: white;
+}
