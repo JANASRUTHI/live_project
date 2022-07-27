@@ -4,9 +4,6 @@ WHAT IS THE PROBLEM?
 SOLUTION FOR THE PROBLEM:
   The website named My website is about COVID 19 Safety themes regarding healthcare and prevention, help and support, mental health and wellbeing , awareness and remedial measures. Addition to this there is a COVID 19 dashboard containing various COVID 19 information about different states, top news regarding COVID 19, etc...
   
-DEMO VIDEO:
-https://youtu.be/9LMfNu-SGc0
-
 LIVE DEMO:
 https://janasruthi.github.io/live_project/#
 
