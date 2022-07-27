@@ -10,7 +10,7 @@ https://youtu.be/9LMfNu-SGc0
 LIVE DEMO:
 https://janasruthi.github.io/live_project/#
 
-AUTHORS:
-  Janasruthi S U, Haripriya L.
+AUTHOR:
+  Janasruthi S U.
   
  
